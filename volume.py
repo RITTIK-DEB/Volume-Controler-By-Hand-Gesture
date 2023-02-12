@@ -31,8 +31,9 @@ volRange=volume.GetVolumeRange()
 minvol=volRange[0]
 maxvol=volRange[1]
 ################################
+cap=cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
-cap=cv2.VideoCapture(0)
+## if camera error cant grab a frame  cap=cv2.VideoCapture(0,cv2.CAP_DSHOW) else cap=cv2.VideoCapture(0)
 cap.set(3,640)
 cap.set(4,480)
 
